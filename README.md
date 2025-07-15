@@ -1,61 +1,81 @@
-# 🩺 Disease Diagnosis Trends – Healthcare Data Analysis Project
+# 🏥 Healthcare Admission Analysis – Trends in Conditions, Billing, and Demographics
 
 ## 📌 Objective  
-To analyze disease frequency across age and gender using patient diagnosis data. The goal is to uncover meaningful trends that can support healthcare planning and targeted awareness initiatives.
+To analyze hospital admission records and uncover trends across patient demographics, medical conditions, billing, and test outcomes. The project aims to assist healthcare providers in making data-driven decisions regarding resource allocation, treatment planning, and patient care optimization.
 
 ---
 
 ## 🗃️ Dataset Overview  
-- **Columns:** Age, Gender, Disease, Symptom  
-- **Source:** https://www.kaggle.com/datasets/s3programmer/disease-diagnosis-dataset
-- **Records:** [Will update after data cleaning]
+This dataset simulates electronic health records (EHR) and includes detailed patient admission information.
+
+- **Columns Include:**  
+  - Name  
+  - Age  
+  - Gender  
+  - Blood Type  
+  - Medical Condition  
+  - Date of Admission  
+  - Discharge Date  
+  - Doctor  
+  - Hospital  
+  - Insurance Provider  
+  - Billing Amount  
+  - Room Number  
+  - Admission Type (Emergency, Elective, Urgent)  
+  - Medication  
+  - Test Results (Normal, Abnormal, Inconclusive)
+
+- **Source:** https://www.kaggle.com/datasets/prasad22/healthcare-dataset
+- **Total Records:** [Update after cleaning]
 
 ---
 
 ## 🎯 Project Goals  
-- Identify the most frequently diagnosed diseases  
-- Analyze disease distribution across age groups  
-- Understand gender-based disease patterns  
-- Prepare clean, SQL-compatible data  
-- Visualize insights through graphs and dashboards (Power BI/Tableau)
+- Explore disease and condition frequency across genders and age groups  
+- Analyze billing trends based on admission type, hospital, and insurance  
+- Understand test result distribution by medical condition  
+- Calculate and visualize patient **Length of Stay** based on admission and discharge dates  
+- Prepare clean, SQL-ready healthcare data  
+- Visualize trends using Power BI or Tableau
 
 ---
 
 ## 🔧 Tech Stack  
 - **Python**: Pandas, Matplotlib, Seaborn  
-- **MySQL**: For storing and querying structured health data  
-- **Power BI / Tableau**: For interactive data visualization  
+- **MySQL**: For structured queries and relational data modeling  
+- **Power BI / Tableau**: Interactive dashboards and visual insights  
 - **Jupyter Notebook**
 
 ---
 
 ## 🔎 Key Questions Explored  
-- What are the top 5 most common diseases?  
-- Do men and women show different disease trends?  
-- Which age groups are most affected by specific diseases?  
-- Are there diseases equally common across all groups?
+- What are the most common medical conditions by age and gender?  
+- Do emergency admissions result in higher bills and longer stays?  
+- How do test results vary across conditions and medications?  
+- Which hospitals/doctors handle the most critical cases?
 
 ---
 
 ## 🚀 Project Status  
 - [x] Dataset selected  
 - [ ] Data cleaning (in progress)  
-- [ ] SQL table creation  
+- [ ] SQL schema design  
 - [ ] Exploratory analysis  
 - [ ] Dashboard creation  
-- [ ] Final insights & documentation
+- [ ] Final reporting
 
 ---
 
 ## 📈 Next Steps  
-- Clean and prepare the dataset for analysis  
-- Perform SQL-based data exploration  
-- Create grouped visualizations and dashboards  
-- Summarize and document findings
+- Clean and prepare the dataset (text formatting, missing values, date conversions)  
+- Design normalized SQL tables (`patients`, `admissions`, `billing`)  
+- Perform group-wise and condition-based analysis  
+- Build a visual dashboard for stakeholders
 
 ---
 
 ## 📄 Disclaimer  
-This project uses synthetic or publicly available health data for educational and learning purposes only. It does not represent real patient records.
+This dataset is synthetic and intended for learning and demonstration purposes only. It does not represent real patient data or actual hospital records.
+
 
 
