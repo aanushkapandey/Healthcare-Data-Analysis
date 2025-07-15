@@ -7,7 +7,7 @@ To analyze disease frequency across age and gender using patient diagnosis data.
 
 ## 🗃️ Dataset Overview  
 - **Columns:** Age, Gender, Disease, Symptom  
-- **Source:** [Replace this with Kaggle link or “synthetic dataset”]  
+- **Source:** https://www.kaggle.com/datasets/s3programmer/disease-diagnosis-dataset
 - **Records:** [Will update after data cleaning]
 
 ---
