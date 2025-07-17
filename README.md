@@ -17,9 +17,9 @@ To perform data-driven exploration on healthcare records to:
 ## 🗂️ Folder Structure
 healthcare-data-analysis/
 ├── clean_healthcare_data/ # Final cleaned dataset
-├── healthcare_data_cleaning/ # Notebooks for data cleaning (Day 1)
+├── healthcare_data_cleaning/ # Notebooks for data cleaning 
 ├── healthcare_dataset/ # Raw and synthetic dataset files
-├── healthcare_eda_analysis/ # Visualizations and EDA notebooks (Day 3)
+├── healthcare_eda_analysis/ # Visualizations and EDA notebooks 
 ├── README.md
 
 ---
