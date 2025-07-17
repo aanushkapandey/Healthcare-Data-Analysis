@@ -1,81 +1,74 @@
-# 🏥 Healthcare Admission Analysis – Trends in Conditions, Billing, and Demographics
+# 🩺 Healthcare Data Analysis Project
 
-## 📌 Objective  
-To analyze hospital admission records and uncover trends across patient demographics, medical conditions, billing, and test outcomes. The project aims to assist healthcare providers in making data-driven decisions regarding resource allocation, treatment planning, and patient care optimization.
+This project focuses on analyzing synthetic healthcare data to uncover patterns in patient demographics, medical conditions, hospital admissions, medications, and outcomes. The analysis helps identify trends that can support hospital decision-making and improve patient care.
 
 ---
 
-## 🗃️ Dataset Overview  
-This dataset simulates electronic health records (EHR) and includes detailed patient admission information.
+## 🎯 Business Objective
 
-- **Columns Include:**  
-  - Name  
-  - Age  
-  - Gender  
-  - Blood Type  
-  - Medical Condition  
-  - Date of Admission  
-  - Discharge Date  
-  - Doctor  
-  - Hospital  
-  - Insurance Provider  
-  - Billing Amount  
-  - Room Number  
-  - Admission Type (Emergency, Elective, Urgent)  
-  - Medication  
-  - Test Results (Normal, Abnormal, Inconclusive)
+To perform data-driven exploration on healthcare records to:
 
+- Understand the relationship between medical conditions, gender, and admission types.
+- Analyze test results and prescribed medications across different diseases.
+- Detect insights that could assist hospitals in resource planning and treatment strategies.
+
+---
+
+## 🗂️ Folder Structure
+healthcare-data-analysis/
+├── clean_healthcare_data/ # Final cleaned dataset
+├── healthcare_data_cleaning/ # Notebooks for data cleaning (Day 1)
+├── healthcare_dataset/ # Raw and synthetic dataset files
+├── healthcare_eda_analysis/ # Visualizations and EDA notebooks (Day 3)
+├── README.md
+
+---
+
+## 🧾 Dataset Overview
+
+- **Type:** Synthetic healthcare dataset  
 - **Source:** https://www.kaggle.com/datasets/prasad22/healthcare-dataset
-- **Total Records:** [Update after cleaning]
+- **Features Include:**
+  - Medical condition  
+  - Gender  
+  - Age  
+  - Admission type (Urgent, Emergency, Elective)  
+  - Test result status  
+  - Blood type  
+  - Prescribed medications  
+  - Length of hospital stay  
 
 ---
 
-## 🎯 Project Goals  
-- Explore disease and condition frequency across genders and age groups  
-- Analyze billing trends based on admission type, hospital, and insurance  
-- Understand test result distribution by medical condition  
-- Calculate and visualize patient **Length of Stay** based on admission and discharge dates  
-- Prepare clean, SQL-ready healthcare data  
-- Visualize trends using Power BI or Tableau
+## ⚙️ Tools & Libraries Used
 
----
-
-## 🔧 Tech Stack  
-- **Python**: Pandas, Matplotlib, Seaborn  
-- **MySQL**: For structured queries and relational data modeling  
-- **Power BI / Tableau**: Interactive dashboards and visual insights  
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Seaborn**
+- **Matplotlib**
 - **Jupyter Notebook**
 
 ---
 
-## 🔎 Key Questions Explored  
-- What are the most common medical conditions by age and gender?  
-- Do emergency admissions result in higher bills and longer stays?  
-- How do test results vary across conditions and medications?  
-- Which hospitals/doctors handle the most critical cases?
+## 🔍 EDA Summary 
+
+- Most patient attributes showed balanced distributions due to synthetic nature.
+- Cancer and asthma cases had more abnormal test results, while hypertension showed mostly normal outcomes.
+- Male patients dominated cancer cases; arthritis had more female patients.
+- Admission types varied:
+  - **Diabetes → Urgent**
+  - **Hypertension → Elective**
+  - **Obesity → Emergency**
+- Medications were condition-specific:
+  - Obesity patients were prescribed **Penicillin**
+  - Hypertension patients received **Ibuprofen**
+  - Cancer and asthma patients received **Lipter** and **Paracetamol**
+- Length of stay was balanced across medical conditions and admission types.
+- Correlation heatmap showed minor relationships between features.
 
 ---
 
-## 🚀 Project Status  
-- [x] Dataset selected  
-- [ ] Data cleaning (in progress)  
-- [ ] SQL schema design  
-- [ ] Exploratory analysis  
-- [ ] Dashboard creation  
-- [ ] Final reporting
+## ✅ Conclusion 
 
----
-
-## 📈 Next Steps  
-- Clean and prepare the dataset (text formatting, missing values, date conversions)  
-- Design normalized SQL tables (`patients`, `admissions`, `billing`)  
-- Perform group-wise and condition-based analysis  
-- Build a visual dashboard for stakeholders
-
----
-
-## 📄 Disclaimer  
-This dataset is synthetic and intended for learning and demonstration purposes only. It does not represent real patient data or actual hospital records.
-
-
-
+> The EDA phase has revealed meaningful patterns across conditions, test results, medications, and admissions — despite being synthetic data. These insights provide the groundwork for hospital strategy modeling, and further visualization will strengthen data storytelling.
