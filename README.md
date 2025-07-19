@@ -20,6 +20,7 @@ healthcare-data-analysis/
 ├── healthcare_data_cleaning/ # Notebooks for data cleaning 
 ├── healthcare_dataset/ # Raw and synthetic dataset files
 ├── healthcare_eda_analysis/ # Visualizations and EDA notebooks 
+├── Healtcare Dashboard/ # Visualizations for better insight
 ├── README.md
 
 ---
